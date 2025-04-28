@@ -1,4 +1,4 @@
-# Alien-Inasion
+# Alien-Invasion
 This is my first python game
 
 Alien Invasion is a fast-paced arcade-style shooting game where you defend Earth from waves of attacking aliens! Your mission? Pilot your spaceship, dodge enemy fire, and blast as many aliens as you can before they overrun the planet.

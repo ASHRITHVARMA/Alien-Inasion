@@ -1,22 +1,26 @@
 import sys
+
 import pygame
 
+from settings import Settings
+
 class AlienInvaders:
-    "overall class to manage game assets and behavior"
+    """overall class to manage game assets and behavior"""
 
     def __init__(self):
-        "initialize the game and create game resources"
+        """initialize the game and create game resources"""
         pygame.init()
 
         self.screen= pygame.display.set_mode((1000, 800))
         pygame.display.set_caption("Alien Invaders")
 
+        self.settings= Settings()
+        # Set the dimensions of the screen
         # Setting the background color
-        self.bg_color= (230, 230, 230)
-
+        self.bg_color= self.settings.bg_color
 
     def run_game(self):
-        "start the main loop for the game"
+        """start the main loop for the game"""
         while True:
             for event in pygame.event.get():
                 if event.type== pygame.QUIT:
